@@ -1,8 +1,11 @@
-This is an RPN calculator with pluggable modules, just to demonstrate
-a crude, simplistic form of dynamic linking. The
-addplug/divplug/multplug/subtplug programs generate the actual plug in
-modules, while plugcalc uses them. plugcalc.cfg configures what
-modules plugcalc will know about. 
+Calculators to demonstrate dynamic linking in pure C
+=======
+
+This is an RPN calculator with pluggable modules, designed to
+demonstrate a crude, simplistic form of dynamic linking. The
+`addplug`/`divplug`/`multplug`/`subtplug` programs generate the actual
+plug in modules, while `plugcalc` uses them. `plugcalc.cfg` configures
+what modules plugcalc will know about.
 
 It works by grabbing a function pointer, and reading in a big block of
 memory after the function pointer, and writing that to a file as the
